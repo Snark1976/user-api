@@ -1,0 +1,29 @@
+[project]
+name = "user-api"
+version = "0.1.0"
+description = "REST API for user management using LiteStar and SQLite"
+authors = [
+    {name = "Snark1976", email = "kohovec@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.poetry]
+packages = [{include = "user_api", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1"
+litestar = { extras = ["standard"], version = "^2" }
+litestar-granian = "^0"
+advanced-alchemy = "==1.4.2"
+pydantic = "^2.8.0"
+alembic = "^1.13.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-asyncio = "^0.23.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
