@@ -10,7 +10,7 @@ To run the application using Docker, follow these steps:
 1. **Clone the Repository**:
     - Copy the repository to your local machine:
 ```bash
-    git clone https://github.com/your-username/user-api.git
+    git clone https://github.com/Snark1976/user-api.git
     cd user-api
 ```
 
